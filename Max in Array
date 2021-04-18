@@ -1,0 +1,25 @@
+package Russi7kd;
+import java.util.*;
+public class Arrays {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        int[] myList = new int[10];
+        
+        for (int i = 0; i < myList.length; i++) {
+            System.out.print((i+1)+") Enter number: ");
+            myList[i] = input.nextInt();
+        }
+        
+        int max = myList[0];
+        
+        for (int i = 0; i < myList.length; i++) {
+            if (myList[i] > max){
+                max = myList[i];
+            }
+        }
+        
+        System.out.println("Max is: "+max);
+    }
+}
